@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Selfie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Collage Web App</h1>
+        <hr>
+        <h4 class="text-center">Please allow access to your webcam and say "selfie" to take a selfie for creating a collage.</h4>
+
+        <div class="text-center">
+            <button class="btn btn-lg btn-primary" onclick="start()">Start</button>
+        </div>
+
+        <div class="webcam-container text-center">
+            <div id="camera" class="webcam-preview"></div>
+        </div>
+
+        <div class="text-center">
+            <label>Your selfie will display here:</label>
+            <div class="result-row">
+                <div id="result1" class="result-column">
+                    <img id="selfie1" src="" alt="Selfie 1">
+                </div>
+
+                <div id="result2" class="result-column">
+                    <img id="selfie2" src="" alt="Selfie 2">
+                </div>
+
+                <div id="result3" class="result-column">
+                    <img id="selfie3" src="" alt="Selfie 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy-right-footer">
+        Developed by - Jairav
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
